@@ -197,5 +197,16 @@ namespace Stride.Engine
         {
             collector.Dispose();
         }
+
+        /// <summary>
+        /// TODO: This is a temporary function. This is only being used to experiment
+        /// with editing engine code.
+        /// </summary>
+        public void PrintName()
+        {
+            if (DebugText == null) return;
+
+            DebugText.Print($"Name is {Entity.Name}", new Core.Mathematics.Int2(100, 100));
+        }
     }
 }
